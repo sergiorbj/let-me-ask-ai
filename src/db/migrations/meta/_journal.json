@@ -15,6 +15,13 @@
       "when": 1752107357433,
       "tag": "0001_futuristic_marrow",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752542981596,
+      "tag": "0002_stale_warbird",
+      "breakpoints": true
     }
   ]
 }
