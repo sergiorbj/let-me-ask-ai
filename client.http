@@ -45,5 +45,5 @@ POST {{baseUrl}}/rooms/{{roomId}}/question
 Content-Type: application/json
 
 {
-    "question": "Are you a human?"
+    "question": "What is React?"
 }
