@@ -56,7 +56,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ### 4. Start the Database with Docker
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 This will start a PostgreSQL database with the pgvector extension on port 5432.
@@ -119,12 +119,12 @@ The application uses three main tables:
 
 ### Start Services
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Stop Services
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## 🔍 How It Works

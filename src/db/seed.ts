@@ -1,9 +1,16 @@
 import { reset, seed } from 'drizzle-seed';
 import { db, sql } from './connection.ts';
-import { schema } from './schema/index.ts';
+import { rooms } from './schema/rooms.ts';
+import { questions } from './schema/questions.ts';
 
-await reset(db, schema);
-await seed(db, schema).refine((f) => {
+// Create a schema with only the tables we want to seed
+const seedableSchema = {
+  rooms,
+  questions,
+};
+
+await reset(db, seedableSchema);
+await seed(db, seedableSchema).refine((f) => {
   return {
     rooms: {
       count: 5,
